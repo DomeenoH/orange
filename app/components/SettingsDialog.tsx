@@ -25,7 +25,7 @@ interface SettingsDialogProps {
 export const SettingsButton = () => {
 	return (
 		<SettingsDialog>
-			<Tooltip content="Settings">
+			<Tooltip content="设置">
 				<Trigger asChild>
 					<Button className="text-sm" displayType="secondary">
 						<Icon type="cog" />
@@ -51,27 +51,27 @@ export const SettingsDialog: FC<SettingsDialogProps> = ({
 			<Portal>
 				<DialogOverlay />
 				<DialogContent>
-					<DialogTitle>Settings</DialogTitle>
+					<DialogTitle>设置</DialogTitle>
 					<div className="grid grid-cols-1 md:grid-cols-[auto_1fr] gap-4 mt-8 items-center">
 						<Label
 							className="text-base -mb-2 md:mb-0 text-left md:text-right"
 							htmlFor="camera"
 						>
-							Camera
+							摄像头
 						</Label>
 						<VideoInputSelector id="camera" />
 						<Label
 							className="text-base -mb-2 md:mb-0 text-left md:text-right"
 							htmlFor="mic"
 						>
-							Mic
+							麦克风
 						</Label>
 						<AudioInputSelector id="mic" />
 						<Label
 							className="text-base -mb-2 md:mb-0 text-left md:text-right"
 							htmlFor="blurBackground"
 						>
-							Blur Background
+							背景虚化
 						</Label>
 						<div>
 							<Toggle
@@ -84,7 +84,7 @@ export const SettingsDialog: FC<SettingsDialogProps> = ({
 							className="text-base -mb-2 md:mb-0 text-left md:text-right"
 							htmlFor="suppressNoise"
 						>
-							Suppress Noise
+							噪声抑制
 						</Label>
 						<div>
 							<Toggle

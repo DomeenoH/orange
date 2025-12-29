@@ -73,7 +73,9 @@ export const MicButton: FC<
 					open
 					type="foreground"
 				>
-					<Toast.Title className="ToastTitle">Talking while muted?</Toast.Title>
+					<Toast.Title className="ToastTitle">
+						您在说话，但麦克风已静音？
+					</Toast.Title>
 					<Toast.Action
 						className="ToastAction"
 						asChild

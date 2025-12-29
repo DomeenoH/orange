@@ -33,7 +33,7 @@ export const OverflowMenu: FC<OverflowMenuProps> = ({ bugReportsEnabled }) => {
 			<DropdownMenu.Root>
 				<DropdownMenu.Trigger asChild>
 					<Button displayType="secondary">
-						<VisuallyHidden>More options</VisuallyHidden>
+						<VisuallyHidden>更多选项</VisuallyHidden>
 						<Icon type="EllipsisVerticalIcon" />
 					</Button>
 				</DropdownMenu.Trigger>
@@ -44,7 +44,7 @@ export const OverflowMenu: FC<OverflowMenuProps> = ({ bugReportsEnabled }) => {
 								onSelect={() => setDataSaverMode(!dataSaverMode)}
 							>
 								<Icon type="WifiIcon" className="mr-2" />
-								{dataSaverMode ? 'Disable Data Saver' : 'Enable Data Saver'}
+								{dataSaverMode ? '禁用省流模式' : '启用省流模式'}
 							</DropdownMenu.Item>
 						)}
 						<DropdownMenu.Item
@@ -54,13 +54,13 @@ export const OverflowMenu: FC<OverflowMenuProps> = ({ bugReportsEnabled }) => {
 							}}
 						>
 							<Icon type="PhoneIcon" className="mr-2" />
-							{audioOnlyMode ? 'Disable Audio Only' : 'Enable Audio Only'}
+							{audioOnlyMode ? '禁用仅音频模式' : '启用仅音频模式'}
 						</DropdownMenu.Item>
 						<DropdownMenu.Item
 							onSelect={() => navigator.clipboard.writeText(roomUrl)}
 						>
 							<Icon type="ClipboardDocumentIcon" className="mr-2" />
-							Copy URL
+							复制链接
 						</DropdownMenu.Item>
 						<DropdownMenu.Item
 							onSelect={() => {
@@ -68,7 +68,7 @@ export const OverflowMenu: FC<OverflowMenuProps> = ({ bugReportsEnabled }) => {
 							}}
 						>
 							<Icon type="cog" className="mr-2" />
-							Settings
+							设置
 						</DropdownMenu.Item>
 						{bugReportsEnabled && (
 							<DropdownMenu.Item
@@ -77,7 +77,7 @@ export const OverflowMenu: FC<OverflowMenuProps> = ({ bugReportsEnabled }) => {
 								}}
 							>
 								<Icon type="bug" className="mr-2" />
-								Report bug
+								报告错误
 							</DropdownMenu.Item>
 						)}
 						<DropdownMenu.Item

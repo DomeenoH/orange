@@ -38,14 +38,14 @@ export default function Index() {
 					<h1 className="text-3xl font-bold">🍊 Orange Meets</h1>
 					<div className="flex items-center justify-between gap-3">
 						<p className="text-sm text-zinc-500 dark:text-zinc-400">
-							Logged in as {data?.displayName}
+							已登录为 {data?.displayName}
 						</p>
 						{!usedAccess && (
 							<a
 								className="block text-sm underline text-zinc-500 hover:text-zinc-700 dark:text-zinc-400 dark:hover:text-zinc-200"
 								href="/set-username"
 							>
-								Change
+								修改
 							</a>
 						)}
 					</div>
@@ -62,25 +62,26 @@ export default function Index() {
 							// if someone clicks the link to create a new room
 							// before the js has loaded then we'll use a server side redirect
 							// (in new.tsx) to send the user to a new room
+							// (in new.tsx) to send the user to a new room
 						}}
 					>
-						New Room
+						创建新房间
 					</ButtonLink>
 				</div>
 				<details className="cursor-pointer">
 					<summary className="text-zinc-500 dark:text-zinc-400">
-						Or join a room
+						或者加入房间
 					</summary>
 					<Form
 						className="grid items-end gap-4 grid-cols-[1fr_auto] w-full pt-4"
 						method="post"
 					>
 						<div className="space-y-2">
-							<Label htmlFor="room">Room name</Label>
+							<Label htmlFor="room">房间名称</Label>
 							<Input name="room" id="room" required />
 						</div>
 						<Button className="text-xs" type="submit" displayType="secondary">
-							Join
+							加入
 						</Button>
 					</Form>
 				</details>

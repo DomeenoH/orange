@@ -59,8 +59,7 @@ const OtherUser: FC<{ user: User }> = ({ user }) => {
 	return <UserListItem user={user} audioTrack={audioTrack}></UserListItem>
 }
 
-export const participantCount = (count: number) =>
-	`${count} Participant${count > 1 ? 's' : ''}`
+export const participantCount = (count: number) => `${count} 位参与者`
 
 interface ParticipantDialogProps {
 	children?: ReactNode

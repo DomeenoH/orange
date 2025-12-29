@@ -41,11 +41,8 @@ export function EnsurePermissions(props: EnsurePermissionsProps) {
 		return (
 			<div className="grid items-center h-full">
 				<div className="mx-auto space-y-2 max-w-80">
-					<h1 className="text-2xl font-bold">Permission denied</h1>
-					<p>
-						You will need to go into your browser settings and manually
-						re-enable permission.
-					</p>
+					<h1 className="text-2xl font-bold">获取权限失败</h1>
+					<p>您需要前往浏览器设置并手动重新启用权限。</p>
 				</div>
 			</div>
 		)
@@ -56,8 +53,8 @@ export function EnsurePermissions(props: EnsurePermissionsProps) {
 			<div className="grid items-center h-full">
 				<div className="mx-auto max-w-80">
 					<p className="mb-8">
-						In order to use Orange Meets, you will need to grant permission to
-						your camera and microphone. You will be prompted for access.
+						为了使用 Orange
+						Meets，您需要授权使用摄像头和麦克风。系统将提示您进行访问。
 					</p>
 					<Button
 						onClick={() => {
@@ -79,7 +76,7 @@ export function EnsurePermissions(props: EnsurePermissionsProps) {
 								})
 						}}
 					>
-						Allow access
+						允许访问
 					</Button>
 				</div>
 			</div>

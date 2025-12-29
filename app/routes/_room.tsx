@@ -77,7 +77,7 @@ export default function RoomWithPermissions() {
 						<div>
 							<h1 className="flex items-center gap-3 text-3xl font-black">
 								<Icon type="SignalSlashIcon" />
-								You are offline
+								您已离线
 							</h1>
 						</div>
 					</div>

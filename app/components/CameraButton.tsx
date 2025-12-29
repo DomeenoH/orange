@@ -41,7 +41,7 @@ export const CameraButton: FC<ButtonProps> = ({ onClick, ...rest }) => {
 		<Tooltip
 			content={
 				videoUnavailableMessage ??
-				`Turn camera ${videoEnabled ? 'off' : 'on'} (${metaKey}E)`
+				`摄像头${videoEnabled ? '关闭' : '开启'} (${metaKey}E)`
 			}
 		>
 			<Button
@@ -57,10 +57,11 @@ export const CameraButton: FC<ButtonProps> = ({ onClick, ...rest }) => {
 				{...rest}
 			>
 				<VisuallyHidden>
-					{videoEnabled ? 'Turn camera off' : 'Turn camera on'}
+					{videoEnabled ? '关闭摄像头' : '开启摄像头'}
 				</VisuallyHidden>
 				<Icon type={videoEnabled ? 'videoOn' : 'videoOff'} />
 			</Button>
 		</Tooltip>
 	)
 }
+```
