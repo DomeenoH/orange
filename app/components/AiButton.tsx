@@ -20,7 +20,6 @@ function RemoveAiButton() {
 			className="text-xs"
 			displayType="secondary"
 		>
-		</Button>
 			删除 AI
 		</Button>
 	)
