@@ -20,7 +20,8 @@ function RemoveAiButton() {
 			className="text-xs"
 			displayType="secondary"
 		>
-			Remove AI
+		</Button>
+			删除 AI
 		</Button>
 	)
 }
@@ -56,7 +57,7 @@ export function AiButton(props: { recordActivity: (user: User) => void }) {
 							className="text-xs flex items-center gap-2"
 							disabled={connectionPending}
 						>
-							<span>Invite AI</span>
+							<span>邀请 AI</span>
 						</Button>
 					</Trigger>
 				</InviteAiDialog>

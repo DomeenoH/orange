@@ -7,13 +7,12 @@ import { mode } from '~/utils/mode'
 import noiseSuppression from '~/utils/noiseSuppression'
 
 export const errorMessageMap = {
-	NotAllowedError:
-		'Permission was denied. Grant permission and reload to enable.',
-	NotFoundError: 'No device was found.',
-	NotReadableError: 'Device is already in use.',
-	OverconstrainedError: 'No device was found that meets constraints.',
-	DevicesExhaustedError: 'All devices failed to initialize.',
-	UnknownError: 'An unknown error occurred.',
+	NotAllowedError: '权限被拒绝。请授予权限并刷新页面以开启。',
+	NotFoundError: '未找到相关设备。',
+	NotReadableError: '设备已被占用。',
+	OverconstrainedError: '未能找到符合要求的设备。',
+	DevicesExhaustedError: '所有设备初始化均失败。',
+	UnknownError: '发生未知错误。',
 }
 
 type UserMediaError = keyof typeof errorMessageMap

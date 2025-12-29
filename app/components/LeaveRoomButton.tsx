@@ -20,11 +20,7 @@ export const LeaveRoomButton: FC<LeaveRoomButtonProps> = ({
 			<Button
 				displayType="danger"
 				onClick={() => {
-					const params = new URLSearchParams()
-					if (meetingId) params.set('meetingId', meetingId)
-					navigate(
-						navigateToFeedbackPage ? `/call-quality-feedback?${params}` : '/'
-					)
+					navigate('/')
 				}}
 			>
 				<VisuallyHidden>Leave</VisuallyHidden>
