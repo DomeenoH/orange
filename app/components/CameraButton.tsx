@@ -64,4 +64,3 @@ export const CameraButton: FC<ButtonProps> = ({ onClick, ...rest }) => {
 		</Tooltip>
 	)
 }
-```
